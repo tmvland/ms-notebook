@@ -16,3 +16,6 @@ Usage: sienax <input> [options]
   -r              : regional - use standard-space masks to give peripheral cortex GM volume (3-class segmentation only) and ventricular CSF volume
   -lm <mask>      : use lesion (or lesion+CSF) mask to remove incorrectly labelled "grey matter" voxels
   -S "segopts"    : options to pass to FAST segmentation (inside double-quotes), e.g. -S "I 20"
+
+citation:
+SIENAX. Brain tissue volume, normalised for subject head size, was estimated with SIENAX [Smith 2001, Smith 2002], part of FSL [Smith 2004]. SIENAX starts by extracting brain and skull images from the single whole-head input data [Smith 2002b]. The brain image is then affine-registered to MNI152 space [Jenkinson 2001, Jenkinson 2002] (using the skull image to determine the registration scaling); this is primarily in order to obtain the volumetric scaling factor, to be used as a normalisation for head size. Next, tissue-type segmentation with partial volume estimation is carried out [Zhang 2001] in order to calculate total volume of brain tissue (including separate estimates of volumes of grey matter, white matter, peripheral grey matter and ventricular CSF).
