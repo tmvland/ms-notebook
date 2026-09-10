@@ -1,0 +1,21 @@
+Liu papaer: https://pmc.ncbi.nlm.nih.gov/articles/PMC9899211/
+other refs:
+https://neuroangio.org/anatomy-and-variants/posterior-cerebral-artery/
+
+Arterial territories: 
+MCA - Middle cerebral artery. Supplies lateral convexity of cerebral hemisphere.
+PCA - Posterior cerebral artery. Supplies occipital, inferomesial parietal, and inferior temporal lobes as well as third ventricles.
+VB - Vertebro-Basilar system
+ACA - Anterior Cerebral artery. Supplies frontal and parietal lobes, basal ganglia and the anterior corpus callosum.
+
+Watershed areas in the brain are areas where limits of two arterial territories meet and overlap.
+They sit at the ends of their blood supply system and so receive the lowest perfusion
+pressure and are most vulnerable to things like cerebran infarction or stroke.
+
+imaging criteria depends. Can use DWI to highlight restricted water movement. Can look bilaterally or unilaterally for damage. unilateral if
+if neck artery is severely narrowed. Bilateral after global low blood pressure ike cardiac arrest.
+
+Probability maps are considered an estimate of the likelihood a voxel belongs to a certain territory. The more voxels there are the more accurate the sample is.
+P_mca/P_pca > 1 indicates that the border zone voxel is more effected in MCA than in PCA strokes. 
+
+Border zone probabilities were then extended using the Bernoulli Mixture method
