@@ -1,5 +1,7 @@
 sienax notes
 
+https://fsl.fmrib.ox.ac.uk/fsl/docs/structural/siena/user_guide.html
+
 Basic command: 
 navigate to folder containing file for segmentation
 sienax <input file name>.
