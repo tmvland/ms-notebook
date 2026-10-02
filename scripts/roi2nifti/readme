@@ -1,1 +1,1 @@
-
+Variables x_shift and y_shift are set to 0 but exist in case the user for whatever reason needs to shift the origin of the world coordinates.
