@@ -1,2 +1,10 @@
 
 move up one directory: cd ..
+
+If mount crashes:
+diskutil unmount force /Users/tlandman/rad-data
+
+ps aux | grep fuse
+
+kill -9 <PID>
+
