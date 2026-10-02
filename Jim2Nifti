@@ -1,0 +1,13 @@
+Converting between JIM .ROI and NIFTI volumetric binary mask
+
+-Save ROI segmented file as .roi.
+-Load original nifti in JIM9.
+-Go into main JIM window, go to Process>Masker
+	-in the File field, enter the image file name for the image to be masked
+	-Click mask outside to retain the inner volume of the ROI, or mask 	inside to set the enclosed region to 0. 
+	-Pick the ROI file where it asks for the ROI file
+	-Combination mode union https://www.xinapse.com/Manual/masking/
+	-Pixel area threshold 50%
+	-Save settings>apply
+	-When the bottom left says masking complete save the result as a new image
+
