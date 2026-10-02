@@ -1,4 +1,4 @@
-sienax notes
+sienax- primarily used for longitudinal studies, tracking brain volume changes over multiple time points. 
 
 https://fsl.fmrib.ox.ac.uk/fsl/docs/structural/siena/user_guide.html
 
@@ -21,3 +21,11 @@ Usage: sienax <input> [options]
 
 citation:
 SIENAX. Brain tissue volume, normalised for subject head size, was estimated with SIENAX [Smith 2001, Smith 2002], part of FSL [Smith 2004]. SIENAX starts by extracting brain and skull images from the single whole-head input data [Smith 2002b]. The brain image is then affine-registered to MNI152 space [Jenkinson 2001, Jenkinson 2002] (using the skull image to determine the registration scaling); this is primarily in order to obtain the volumetric scaling factor, to be used as a normalisation for head size. Next, tissue-type segmentation with partial volume estimation is carried out [Zhang 2001] in order to calculate total volume of brain tissue (including separate estimates of volumes of grey matter, white matter, peripheral grey matter and ventricular CSF).
+
+FSL FAST-- good clean segmentation
+
+-Step 1: strip brain
+bet Brain_Ax_3D_T1_GRE_2.nii output_stripped_brain.nii.gz -f 0.5 -g 0
+
+-Step 2: fo tjrough FAST processing. 
+fast -b -B -o output_seg_brain output_stripped_brain.nii.gz 
